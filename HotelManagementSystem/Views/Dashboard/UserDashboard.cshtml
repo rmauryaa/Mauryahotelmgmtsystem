@@ -1,0 +1,95 @@
+﻿@model User
+@{
+    ViewBag.Title = "User Dashboard";
+}
+
+<br />
+<br />
+<br />
+<br />
+
+
+<div class="box-gallery">
+    <h1 class="mx-4" style="font-family:Arial ">Welcome, @Model.Name (@Model.IdProof) </h1>
+</div>
+
+<table class="table mx-4">
+    <tbody>
+        <tr>
+            <th scope="row">Mobile:</th>
+            @if (!@Model.PhoneNumberConfirmed)
+            {
+                <td>@Model.PhoneNumber <a class="link-danger" href="#">Verify</a></td>
+            }
+            else
+            {
+                <td>@Model.PhoneNumber <div class="link-success">Verified</div></td>
+            }
+        </tr>
+        <tr>
+            @if(@Model.EmailConfirmed) 
+            {
+                <th scope="row">Email:</th>
+                <td>@Model.Email <a href="#" class="link-success">Verified</a></td>
+            }
+            else
+            {
+                <th scope="row">Email:</th>
+                <td>@Model.Email <a href="#" class="link-danger">Verfify</a></td>
+            }
+        </tr>
+        <tr>
+            <th scope="row">Username:</th>
+            <td>@Model.UserName</td>
+        </tr>
+        <tr>
+            <th scope="row">Id Proof:</th>
+            <td>@Model.IdProof</td>
+        </tr>
+        <tr>
+            <th scope="row">Gender:</th>
+            <td>@Model.Gender</td>
+        </tr>
+    </tbody>
+</table>
+@*<a class="btn btn-primary mx-4" asp-action="PastBooking" asp-controller="Dashboard">PastBooking</a>
+<a class="btn btn-primary mx-4" asp-action="CurrentBooking" asp-controller="Dashboard">CurrentBooking</a>
+<a class="btn btn-primary" asp-action="Book" asp-controller="Booking">Book Room</a>*@
+
+<div>
+    <a class="btn btn-primary" asp-controller="Dashboard" asp-action="AddRoom" style="background-color: black">Add New Room</a>
+    <a class="btn btn-primary" asp-controller="Dashboard" asp-action="SearchRoom" style="background-color: black">Booking History</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

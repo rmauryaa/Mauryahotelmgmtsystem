@@ -1,0 +1,215 @@
+﻿@*@model SignUpModel
+@{
+    ViewBag.Title = "Sign Up";
+}
+
+<div class="container">
+    <span asp-validation-summery="All"></span>
+    <div class="title">SignUp page</div>
+    <div class="content">
+      <form asp-action="SignUp" asp-controller="Account" method="post">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" asp-for="FullName">
+            <span asp-validation-for="FullName" class="text-danger"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Mobile Number</span>
+            <input type="text" placeholder="Enter your Mobile Number" asp-for="MobileNumber">
+            <span asp-validation-for="MobileNumber" class="text-danger"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">Email Address</span>
+            <input type="text" placeholder="Enter your email Address" asp-for="EmailAddress">
+            <span asp-validation-for="EmailAddress" class="text-danger"></span>
+          </div>
+          <div class="input-box">
+            <span class="details">UserName</span>
+            <input type="text" placeholder="Enter your UserName" asp-for="UserName">
+            <span asp-validation-for="UserName" class="text-danger"></span>
+          </div>
+          <div class="input-box">
+            <span>Password</span>
+            <input type="password" placeholder="Enter your password" asp-for="Password">
+            <span asp-validation-for="Password" class="text-danger"></span>
+          </div>
+          <div class="input-box">
+            <span>IdProof (PAN Number)</span>
+            <input type="text" placeholder="Enter your Id Proof" asp-for="IdProof">
+            <span asp-validation-for="IdProof" class="text-danger"></span>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" value="Male" name="gender" id="dot-1" asp-for="Gender" hidden>
+          <input type="radio" value="Female" name="gender" id="dot-2" asp-for="Gender" hidden>
+          <input type="radio" value="Prefer not to say" name="gender" id="dot-3" asp-for="Gender" hidden>
+          <span class="gender-title font-weight-bold">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <span asp-validation-for="Gender"></span>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div>*@
+@model SignUpModel
+@{
+    ViewBag.Title = "Sign Up";
+}
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+@*<div class="container my-5 main_box" style="width:400px; height:450px; border:dotted black 1px; border-radius:15px; background-color:black;">*@
+@*<div class="container ">
+    <span asp-validation-summery="All"></span>
+    <div class="title">SignUp page</div>
+    <div class="content">
+        <form asp-action="SignUp" asp-controller="Account" method="post">
+            <div class="user-details">
+                <div>
+                    <span class="details">Full Name</span>
+                    <input style="border-radius:10px" type="text" placeholder="Enter your name" asp-for="FullName">
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+                <div >
+                    <span class="details">Mobile Number</span>
+                    <input style="border-radius:10px" type="text" placeholder="Enter your Mobile Number" asp-for="MobileNumber">
+                    <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                </div>
+                <div>
+                    <span class="details">Email Address</span>
+                    <input style="border-radius:10px" type="text" placeholder="Enter your email Address" asp-for="EmailAddress">
+                    <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                </div>
+                <div>
+                    <span class="details">UserName</span>
+                    <input style="border-radius:10px" type="text" placeholder="Enter your UserName" asp-for="UserName">
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div>
+                    <span>Password</span>
+                    <input style="border-radius:10px" type="password" placeholder="Enter your password" asp-for="Password">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div>
+                    <span>IdProof Aadhar card</span>
+                    <input style="border-radius:10px" type="text" placeholder="Enter your Id Proof" asp-for="IdProof">
+                    <span asp-validation-for="IdProof" class="text-danger"></span>
+                </div>
+            </div>
+            <div class="gender-details">
+                <input type="radio" value="Male" name="gender" id="dot-1" asp-for="Gender" hidden>
+                <input type="radio" value="Female" name="gender" id="dot-2" asp-for="Gender" hidden>
+                <input type="radio" value="Prefer not to say" name="gender" id="dot-3" asp-for="Gender" hidden>
+                <span class="gender-title font-weight-bold">Gender</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <span asp-validation-for="Gender"></span>
+            <div class="button" style="background-color:white">
+                <input type="submit" value="Rahul">
+            </div>
+        </form>
+    </div>
+</div>*@
+
+<div class="container" style="background-color:black; border: 3px solid white; border-radius:15px; ">
+    <span asp-validation-summery="All"></span>
+    <div class="title" style="margin-bottom:5px"><h1 style="color:white">SignUp page</h1></div>
+    <div class="content">
+        <form asp-action="SignUp" asp-controller="Account" method="post">
+            <div class="user-details">
+                <div>
+                    <span class="details"><div style="color:white">Full Name</div></span>
+                    <input style="border-radius:10px" type="text"  asp-for="FullName">
+                    <span asp-validation-for="FullName" class="text-danger"></span>
+                </div>
+                <div>
+							<span class="details"><div style="color:white">Mobile Number</div></span>
+                    <input style="border-radius:10px" type="text"  asp-for="MobileNumber">
+                    <span asp-validation-for="MobileNumber" class="text-danger"></span>
+                </div>
+                <div
+							<span class="details"><div style="color:white">Email Address</div></span>
+                    <input style="border-radius:10px"type="text"  asp-for="EmailAddress">
+                    <span asp-validation-for="EmailAddress" class="text-danger"></span>
+                </div>
+                <div>
+							<span class="details"><div style="color:white">UserName</div></span>
+                    <input style="border-radius:10px" type="text"  asp-for="UserName">
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </div>
+                <div>
+							<span class="details"><div style="color:white">Password</div></span>
+				
+                    <input style="border-radius:10px" type="password"  asp-for="Password">
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div>
+							<span><div style="color:white">Aadhar Number</div></span>
+                    <input style="border-radius:10px" type="text"  asp-for="IdProof">
+                    <span asp-validation-for="IdProof" class="text-danger"></span>
+                </div>
+            </div>
+            <div>
+                <input style="border-radius:10px" type="radio" value="Male" name="gender" id="dot-1" asp-for="Gender" hidden>
+                <input style="border-radius:10px" type="radio" value="Female" name="gender" id="dot-2" asp-for="Gender" hidden>
+                <input style="border-radius:10px" type="radio" value="Prefer not to say" name="gender" id="dot-3" asp-for="Gender" hidden>
+                <span class="gender-title font-weight-bold">  <div style="color:white"> Gender </div>  </span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+								<span class="gender"><div style="color:white">Male</div></span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+								<span class="gender"><div style="color:white">Female</div></span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+								<span class="gender"><div style="color:white">Prefer not to say</div></span>
+                    </label>
+                </div>
+            </div>
+            <span asp-validation-for="Gender"></span>
+
+
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+
+
+    </div>
+</div>

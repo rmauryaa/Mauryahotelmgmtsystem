@@ -1,0 +1,65 @@
+﻿@model Room
+@{
+    ViewBag.Title = "Edit Room";
+}
+<br />
+<br />
+<br />
+
+<div class="container my-5" style="width:450px; border: solid 1px black; border-radius:15px">
+    <label style="font-size:large; font-weight:bold; font-family: 'Exo 2', sans-serif;">Edit Room</label>
+    <hr />
+    <div>
+        <form method="post" asp-action="EditRoom" asp-controller="Dashboard" class="my-3">
+            <div class="form-group my-2">
+                <label class="my-3" asp-for="RoomId">RoomId: </label>
+                <input asp-for="RoomId" class="form-control"/>
+                <span asp-validation-for="RoomId" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label class="my-3" asp-for="FromDate">FromDate: </label>
+                @Html.EditorFor(model => model.FromDate, new { id = "FromDate" } )
+                <span asp-validation-for="FromDate" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label class="my-3" asp-for="ToDate">ToDate: </label>
+                @Html.EditorFor(model => model.ToDate, new { id = "ToDate" } )
+                <span asp-validation-for="ToDate" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label class="my-3" asp-for="FromTime">FromTime: </label>
+                @Html.TextBoxFor(model => model.FromTime, "HH:mm", new { type = "time", @class = "form-control" })
+                <span asp-validation-for="FromTime" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label class="my-3" asp-for="ToTime">ToTime: </label>
+                @Html.TextBoxFor(model => model.ToTime, "HH:mm", new { type = "time", @class = "form-control" })
+                <span asp-validation-for="ToTime" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label class="my-3" asp-for="Capacity">Capacity: </label>
+                <input type="number" asp-for="Capacity" class="form-control" />
+                <span asp-validation-for="Capacity" class="text-danger"></span>
+            </div>
+            <div class="form-group my-2">
+                <label class="my-3" asp-for="Fare">Fare: </label>
+                <input asp-for="Fare" class="form-control" />
+                <span asp-validation-for="Fare" class="text-danger"></span>
+            </div>
+            <div class="form-group my-3">
+                <label class="mr-4" asp-for="Type">Type: </label>
+                <select asp-for="Type">
+                    <option value="AC">AC</option>
+                    <option value="Non-AC" selected>Non - AC</option>
+                </select>
+            </div>
+            <div class="form-group my-2">
+                <label asp-for="IsBooked" style="margin-right: 5px">
+                    Booked? 
+                </label>
+                <input type="checkbox" asp-for="IsBooked" />
+            </div>
+            <button class="btn my-3 btn-primary" type="submit" style="background-color: black">Edit Room</button>
+        </form>
+    </div>
+</div>

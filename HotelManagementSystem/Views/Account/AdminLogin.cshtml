@@ -1,0 +1,60 @@
+﻿
+@model AdminLogInModel
+@{
+    ViewData["Title"] = "AdminLogin";
+}
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+@*<div class="container my-5 main_box" style="width:400px; height:450px; border:dotted black 1px; border-radius:15px;">
+    <div class="container" style="display:flex; justify-content:center; font-size:28px;margin-top:17px">Admin Login Page</div>
+    @using (Html.BeginForm("AdminLogin", "Account", method: FormMethod.Post))
+    {
+        <div class="container my-3">
+            <div class="form-group form-check-label my-2">
+                <div><label style="margin-bottom:5px" asp-for="Username">Username</label></div>
+                <input style="border-radius:10px" class="form-control " type="text" asp-for="Username" />
+                <span class="text-danger" asp-validation-for="Username"></span>
+            </div>
+            <div class="form-group form-check-label my-2">
+                <div><label style="margin-bottom:5px; margin-top:15px;" asp-for="Password">Password</label></div>
+                <input style="border-radius:10px" class="form-control" type="password" asp-for="Password" />
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+            <div class="form-group form-check-label my-1 mx-2">
+                <label style="margin-bottom:5px; margin-top:15px;" asp-for="RememberMe">Remember me</label>
+                <input type="checkbox" asp-for="RememberMe" />
+            </div>
+            <button class="btn my-3" style="margin-bottom:12px; margin-top:10px;height: 100;" type="submit">Login</button>
+        </div>
+    }
+</div>*@
+
+
+<div class="container my-5 main_box" style="width:400px; height:450px; border:dotted black 1px; border-radius:15px; background-color:black;">
+    <div class="container" style="display:flex; justify-content:center; font-size:28px;margin-top:17px">  <h1 style="color:white">Admin Page</h1>  </div>
+    @using (Html.BeginForm("AdminLogin", "Account", method: FormMethod.Post))
+    {
+        <div class="container my-3">
+            <div class="form-group form-check-label my-2">
+                <div><label style="margin-bottom:5px" asp-for="Username"> <h10 style="color:white"> Username</h10></label></div>
+                <input style="border-radius:10px" class="form-control " type="text" asp-for="Username" />
+                <span class="text-danger" asp-validation-for="Username"></span>
+            </div>
+            <div class="form-group form-check-label my-2">
+                <div><label style="margin-bottom:5px; margin-top:15px;" asp-for="Password"> <h10 style="color:white">Password </h10></label></div>
+                <input style="border-radius:10px" class="form-control" type="password" asp-for="Password" />
+                <span class="text-danger" asp-validation-for="Password"></span>
+            </div>
+            <div class="form-group form-check-label my-1 mx-2">
+                <label style="margin-bottom:5px; margin-top:15px;" asp-for="RememberMe"> <h10 style="color:white">Remember me </h10> </label>
+                <input type="checkbox" asp-for="RememberMe" />
+            </div>
+            <button class="btn my-3" style="margin-bottom:12px; margin-top:10px;height: 100; border : 3px solid white; border-radius:15px " type="submit">  <h10 style="color:white">Login  </h10> </button>
+        </div>
+    }
+</div>

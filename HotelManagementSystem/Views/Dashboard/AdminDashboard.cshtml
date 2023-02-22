@@ -1,0 +1,112 @@
+﻿@model List<Room> 
+@{
+    ViewBag.Title = "Admin Dashboard";
+}
+
+<br />
+<br />
+<br />
+
+<h2 class="mx-5 my-4" style="sans-serif; font-size:larger; font-family:Arial; position:center">Welcome, @User.Identity.Name </h2>
+<div class="container mx-5 my-3" style="font-family: 'Poppins',sans-serif;">
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th class="my-1">RoomId</th>
+                <th class="my-1">FromDate</th>
+                 <th class="my-1">ToDate</th>
+                 <th class="my-1">FromTime</th>
+                <th class="my-1">ToTime</th>
+                <th class="my-1">Capacity</th>
+                <th class="my-1">Type</th>
+                <th class="my-1">Fare</th>
+                <th class="my-1">Booked or not</th>
+                <th class="my-1">Edit</th>
+                <th class="my-1">Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+                @foreach(Room room in Model)
+                {
+                    <tr>
+                    <td>@room.RoomId</td>
+                    <td>@room.FromDate</td>
+                    <td>@room.ToDate</td>
+                    <td>@room.FromTime</td>
+                    <td>@room.ToTime</td>
+                    <td>@room.Capacity</td>
+                    <td>@room.Type</td>
+                    <td>@room.Fare</td>
+                    <td>@room.IsBooked</td>
+                    <td>@Html.ActionLink("Edit", "EditRoom", "Dashboard", new {RoomId=room.RoomId})</td>
+                    <td>@Html.ActionLink("Delete", "DeleteRoom", "Dashboard", new {RoomId=room.RoomId})</td>
+                    </tr>
+
+                }
+        </tbody>
+    </table>
+    <div>
+        <a class="btn btn-primary" asp-controller="Dashboard" asp-action="AddRoom" style="background-color: black">Add New Room</a>
+        <a class="btn btn-primary" asp-controller="Dashboard" asp-action="SearchRoom" style="background-color: black">Search Rooms</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
+
+<br />
+<br />
+<br />
