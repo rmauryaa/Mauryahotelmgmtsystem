@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenig rahul\\project\\mauryahotelmgmtsystem\\HotelManagementSystem\\HotelManagementSystem.csproj": {}
+    "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenigRahul\\project\\Mauryahotelmgmtsystem\\HotelManagementSystem\\HotelManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenig rahul\\project\\mauryahotelmgmtsystem\\HotelManagementSystem\\HotelManagementSystem.csproj": {
+    "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenigRahul\\project\\Mauryahotelmgmtsystem\\HotelManagementSystem\\HotelManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenig rahul\\project\\mauryahotelmgmtsystem\\HotelManagementSystem\\HotelManagementSystem.csproj",
+        "projectUniqueName": "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenigRahul\\project\\Mauryahotelmgmtsystem\\HotelManagementSystem\\HotelManagementSystem.csproj",
         "projectName": "HotelManagementSystem",
-        "projectPath": "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenig rahul\\project\\mauryahotelmgmtsystem\\HotelManagementSystem\\HotelManagementSystem.csproj",
+        "projectPath": "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenigRahul\\project\\Mauryahotelmgmtsystem\\HotelManagementSystem\\HotelManagementSystem.csproj",
         "packagesPath": "C:\\Users\\rmaur\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenig rahul\\project\\mauryahotelmgmtsystem\\HotelManagementSystem\\obj\\",
+        "outputPath": "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenigRahul\\project\\Mauryahotelmgmtsystem\\HotelManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rmaur\\AppData\\Roaming\\NuGet\\NuGet.Config",

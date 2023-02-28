@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iRV18rHsSaiGSqX6Hmdktujkv5QGmuRAt30vQPB5GCRlYsZBwHUC/zRZQSmcPbKJB/Cfpgxt3n3GwVapy8P7lQ==",
+  "dgSpecHash": "F80iw/q6AMrMXKAGj3hRXUzbpFrSGkHyBeLMCo8TQu7Ne0w+OH8biK6YLovjBSEqO0/id3h+f6f1PKpgIfQdKA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenig rahul\\project\\mauryahotelmgmtsystem\\HotelManagementSystem\\HotelManagementSystem.csproj",
+  "projectFilePath": "C:\\Users\\rmaur\\OneDrive\\Desktop\\koenigRahul\\project\\Mauryahotelmgmtsystem\\HotelManagementSystem\\HotelManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rmaur\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\rmaur\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.0\\microsoft.aspnetcore.cryptography.internal.6.0.0.nupkg.sha512",

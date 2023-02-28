@@ -42,7 +42,17 @@ namespace HotelManagementSystem.Controllers
         {
             return View();
         }
-        
+
+        public IActionResult Payment()
+        {
+            return View();
+        }
+
+        public IActionResult Guest()
+        {
+            return View();
+        }
+
 
     }
 }

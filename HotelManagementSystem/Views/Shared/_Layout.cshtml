@@ -7,6 +7,8 @@
     <title>@ViewData["Title"] - HotelManagementSystem</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/Payment.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/price.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/service.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/HotelManagementSystem.styles.css" asp-append-version="true" />
     <link href="HotelManagementSystem.styles.css" rel="stylesheet" />
@@ -39,6 +41,14 @@
                         <li class="nav-item">
                             <a class="nav-link" style="font-family: 'Exo 2', sans-serif; font-size:larger" asp-area="" asp-controller="Home" asp-action="Gallery">Gallery</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: 'Exo 2', sans-serif; font-size:larger" asp-area="" asp-controller="Home" asp-action="Payment"> Payment </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="font-family: 'Exo 2', sans-serif; font-size:larger" asp-area="" asp-controller="Home" asp-action="Guest"> Guest </a>
+                        </li>
+
+
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         @if (signInManager.IsSignedIn(User))

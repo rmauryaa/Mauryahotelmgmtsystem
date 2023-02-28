@@ -1,4 +1,4 @@
-﻿@model SignUpModel
+﻿@*@model SignUpModel
 @{
     ViewBag.Title = "Sign Up";
 }
@@ -12,7 +12,7 @@
 
 <div class="container" style="background-color:black; border: 3px solid white; border-radius:15px; ">
     <span asp-validation-summery="All"></span>
-    <div class="title" style="margin-bottom:5px"><h1 style="color:white">SignUp page</h1></div>
+    <div class="title" style="margin-bottom:5px"><h1 style="color:white"> Guest Page </h1></div>
     <div class="content">
         <form asp-action="SignUp" asp-controller="Account" method="post">
             <div class="user-details">
@@ -31,17 +31,8 @@
                     <input style="border-radius:10px"type="text"  asp-for="EmailAddress">
                     <span asp-validation-for="EmailAddress" class="text-danger"></span>
                 </div>
-                <div>
-							<span class="details"><div style="color:white">UserName</div></span>
-                    <input style="border-radius:10px" type="text"  asp-for="UserName">
-                    <span asp-validation-for="UserName" class="text-danger"></span>
-                </div>
-                <div>
-							<span class="details"><div style="color:white">Password</div></span>
-				
-                    <input style="border-radius:10px" type="password"  asp-for="Password">
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
+        
+        
                 <div>
 							<span><div style="color:white">Aadhar Number</div></span>
                     <input style="border-radius:10px" type="text"  asp-for="IdProof">
@@ -78,4 +69,53 @@
 
 
     </div>
+</div>*@
+
+<br />
+<br />
+<br />
+<br />
+
+
+
+<div class="container my-5 main_box" style="width:400px; height:450px; border:dotted black 1px; border-radius:15px; background-color:black;">
+    <div class="container" style="display:flex; justify-content:center; font-size:28px;margin-top:17px"> <h1 style="color:white"> Guest Page </h1> </div>
+    @*@using (Html.BeginForm("UserLogin", "Account", method: FormMethod.Post))*@
+    {
+        <div class="container my-3">
+            
+        <div>
+            <span class="details"><div style="color:white">Full Name</div></span>
+            <input style="border-radius:10px" type="text" >
+            <span  class="text-danger"></span>
+        </div>
+
+        <div>
+            <span class="details"><div style="color:white">Mobile Number</div></span>
+            <input style="border-radius:10px" type="text" >
+            <span class="text-danger"></span>
+        </div>
+
+            <div
+					 <div><label style="margin-bottom:5px" >  <h10 style="color:white"> Email </h10> </label></div>
+                    <input style="border-radius:10px"  type="email" >
+                    <span class="text-danger"></span>
+            </div>
+
+        <div>
+            <span><div style="color:white; margin-bottom:5px ">Aadhar Number</div></span>
+            <input style="border-radius:10px" type="text" >
+            <span class="text-danger"></span>
+        </div>
+
+        <div>
+            <span class="details"><div style="color:white">Gender</div></span>
+            <input style="border-radius:10px" type="text" >
+            <span  class="text-danger"></span>
+        </div>
+
+        <div>
+              <button class="btn my-3" style="margin-bottom:12px; margin-top:10px;height: 10%; border : 3px solid white; border-radius:15px " type="submit">  <h10 style="color:white"> Guest Login  </h10>   </button>
+        </div>
+    }
 </div>
